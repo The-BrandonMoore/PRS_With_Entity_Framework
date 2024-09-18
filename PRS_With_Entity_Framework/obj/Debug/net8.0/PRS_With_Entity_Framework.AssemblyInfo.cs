@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRS_With_Entity_Framework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41f85e624c1c505cc590798db2faea1f116b4eb7")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRS_With_Entity_Framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRS_With_Entity_Framework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

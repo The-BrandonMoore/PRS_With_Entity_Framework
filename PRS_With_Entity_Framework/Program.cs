@@ -5,23 +5,24 @@ namespace PRS_With_Entity_Framework
 {
     internal class Program
     {
-        static UserDb userDb = new();
+        private static UserDb userDb = new();
+        private static VendorDb vendorDb = new();
+
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the PRS DB Manager!");
-
-            string command = "";
-            while (command != "exit")
+            string mainMenuCommand = "";
+            while (mainMenuCommand != "exit")//start of primary/MainMenu while loop
             {
                 DisplayMainMenu();
-                command = PromptInput("Please enter a command: ");
+                mainMenuCommand = PromptInput("Please enter a command: ");
 
-                switch (command)
+                switch (mainMenuCommand)//start of primary/MainMenu switch statement
                 {
                     case "user":
                     case "users":
                         string userMenuCommand = "";
-                        while (userMenuCommand != "back")
+                        while (userMenuCommand != "back")//Start of UserMenu while loop
                         {
                             DisplayUserMenu();
                             userMenuCommand = PromptInput("Please enter a command: ");
@@ -54,6 +55,34 @@ namespace PRS_With_Entity_Framework
                         break;
                     case "vendor":
                     case "vendors":
+                        string vendorMenuCommand = "";
+                        while (vendorMenuCommand != "back")//Start of VendorMenu while loop
+                        {
+                            DisplayVendorMenu();
+                            vendorMenuCommand = PromptInput("Please enter a command: ");
+
+                            switch (vendorMenuCommand) //start of VendorMenu switch statement
+                            {
+                                case "list":
+                                    ListVendors();
+                                    break;
+                                case "get":
+                                    GetVendor();
+                                    break;
+                                case "add":
+                                    AddVendor();
+                                    break;
+                                case "del":
+                                    RemoveVendor();
+                                    break;
+                                case "back":
+                                    userMenuCommand = "back";
+                                    break;
+                                default:
+                                    Console.WriteLine("Invalid command. Please enter a valid Menu command.");
+                                    break;
+                            }//end of VendorMenu switch statement
+                        }//end of VendorMenu while loop
                         break;
                     case "lineitem":
                     case "line item":
@@ -61,13 +90,13 @@ namespace PRS_With_Entity_Framework
                     case "request":
                         break;
                     case "exit":
-                        command = "exit";
+                        mainMenuCommand = "exit";
                         break;
                     default:
                         Console.WriteLine("Invalid Command. Please enter a valid Menu command.");
                         break;
-                }// end of the primary switch statement
-            }//end of primary while loop
+                }// end of the primary/MainMenu switch statement
+            }//end of primary/MainMenu while loop
             Console.WriteLine("BYE");
         }
 
@@ -94,6 +123,18 @@ namespace PRS_With_Entity_Framework
             Console.WriteLine("Get - Get a user by ID number");
             Console.WriteLine("Add - Add a new user");
             Console.WriteLine("Del - Remove a user by ID number");
+            Console.WriteLine("Back - Return to the main menu\n");
+        }
+
+        static void DisplayVendorMenu()
+        {
+            Console.WriteLine("\n  Vendor Menu");
+            Console.WriteLine("=============");
+            Console.WriteLine("\n       Command options:");
+            Console.WriteLine("List - list all vendors");
+            Console.WriteLine("Get - Get a vendor by ID number");
+            Console.WriteLine("Add - Add a new vendor");
+            Console.WriteLine("Del - Remove a vendor by ID number");
             Console.WriteLine("Back - Return to the main menu\n");
         }
 
@@ -196,6 +237,66 @@ namespace PRS_With_Entity_Framework
 
         }
 
+        //VENDER METHODS below here
+        static void ListVendors()
+        {
+            Console.WriteLine("\n    Vendors List");
+            Console.WriteLine("==================\n");
+
+            List<Vendor> vendors = vendorDb.GetVendors();
+            Console.WriteLine("List of vendors:");
+            foreach (Vendor v in vendors)
+            {
+                Console.WriteLine($"id: {v.Id}, name: {v.Name}, code: {v.Code}");
+            }
+        }
+        static void GetVendor()
+        {
+            Console.WriteLine("Get Vendor by ID number");
+            Console.WriteLine("=====================");
+            int id = int.Parse(PromptInput("Vendor ID: "));
+            Vendor v = vendorDb.FindVendor(id);
+            if (v != null)
+            {
+                Console.WriteLine($"Vendor Found: {v}");
+            }
+            else
+            {
+                Console.WriteLine($"No Vendor found for ID: {v}");
+            }
+        }
+        static void AddVendor()
+        {//begin AddVendor Method
+            string code = PromptInput("Enter Code: ");
+            string name = PromptInput("Enter Name: ");
+            string address = PromptInput("Enter Address: ");
+            string city = PromptInput("Enter City: ");
+            string state = PromptInput("Enter State:");
+            string zip = PromptInput("Enter Zip Code:");
+            string phoneNumber = PromptInput("Enter Phone Number: ");
+            string email = PromptInput("Enter Email Address: ");
+            Console.WriteLine("Please enter a valid answer: Y/N\n");
+            Vendor v = new Vendor(code, name, address, city, state, zip, phoneNumber, email);
+            vendorDb.AddVendor(v);
+            Console.WriteLine($"Vendor Added: {v}");
+        }//End AddVendor Method
+        static void RemoveVendor()
+        {
+            Console.WriteLine("\nRemove Vendor");
+            Console.WriteLine("=============");
+            int id = int.Parse(PromptInput("Vendor ID: "));
+            Vendor v = vendorDb.FindVendor(id);
+            if (v != null)
+            {
+                vendorDb.RemoveVendor(v);
+            }
+            else
+            {
+                Console.WriteLine($"No Vendor found for ID: {id}");
+            }
+            Console.WriteLine("Vendor Successfully Removed from Database");
+
+        }
 
 
         // GENERAL METHODS below here

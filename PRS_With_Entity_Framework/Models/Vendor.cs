@@ -48,4 +48,22 @@ public partial class Vendor
 
     [InverseProperty("Vendor")]
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
+
+    public Vendor (string code, string name, string address, string city, string state, string zip, string phoneNumber, string email)
+    {
+        this.Code = code;
+        this.Name = name;
+        this.Address = address;
+        this.City = city;
+        this.State = state;
+        this.Zip = zip;
+        this.PhoneNumber = phoneNumber;
+        this.Email = email;
+
+    }
+
+    public override string ToString()
+    {
+        return $"vendor information: code - {Code}, name - {Name}, phone number - {PhoneNumber}"; 
+    }
 }

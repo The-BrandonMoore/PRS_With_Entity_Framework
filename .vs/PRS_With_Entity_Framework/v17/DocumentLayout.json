@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|solutionrelative:prs_with_entity_framework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|c:\\repos\\maximum-bc-20240819\\c-sharp-repos\\prs_with_entity_framework\\prs_with_entity_framework\\models\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|solutionrelative:prs_with_entity_framework\\models\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|c:\\repos\\maximum-bc-20240819\\c-sharp-repos\\prs_with_entity_framework\\prs_with_entity_framework\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|solutionrelative:prs_with_entity_framework\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|c:\\repos\\maximum-bc-20240819\\c-sharp-repos\\prs_with_entity_framework\\prs_with_entity_framework\\db\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|solutionrelative:prs_with_entity_framework\\db\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|c:\\repos\\maximum-bc-20240819\\c-sharp-repos\\prs_with_entity_framework\\prs_with_entity_framework\\db\\vendordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB036215-E46B-466E-BF39-E31075D30064}|PRS_With_Entity_Framework\\PRS_With_Entity_Framework.csproj|solutionrelative:prs_with_entity_framework\\db\\vendordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,25 +43,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Vendor.cs",
+              "DocumentMoniker": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Models\\Vendor.cs",
+              "RelativeDocumentMoniker": "PRS_With_Entity_Framework\\Models\\Vendor.cs",
+              "ToolTip": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Models\\Vendor.cs",
+              "RelativeToolTip": "PRS_With_Entity_Framework\\Models\\Vendor.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAYwEIAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T15:41:50.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VendorDb.cs",
+              "DocumentMoniker": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Db\\VendorDb.cs",
+              "RelativeDocumentMoniker": "PRS_With_Entity_Framework\\Db\\VendorDb.cs",
+              "ToolTip": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Db\\VendorDb.cs",
+              "RelativeToolTip": "PRS_With_Entity_Framework\\Db\\VendorDb.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T15:19:21.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Models\\User.cs",
               "RelativeDocumentMoniker": "PRS_With_Entity_Framework\\Models\\User.cs",
               "ToolTip": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Models\\User.cs",
               "RelativeToolTip": "PRS_With_Entity_Framework\\Models\\User.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAA/wC8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwC8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T22:30:35.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserDb.cs",
               "DocumentMoniker": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Db\\UserDb.cs",
               "RelativeDocumentMoniker": "PRS_With_Entity_Framework\\Db\\UserDb.cs",
               "ToolTip": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Db\\UserDb.cs",
               "RelativeToolTip": "PRS_With_Entity_Framework\\Db\\UserDb.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T22:22:10.373Z",
               "EditorCaption": ""
@@ -66,7 +100,7 @@
               "RelativeDocumentMoniker": "PRS_With_Entity_Framework\\Program.cs",
               "ToolTip": "C:\\repos\\maximum-bc-20240819\\C-sharp-repos\\PRS_With_Entity_Framework\\PRS_With_Entity_Framework\\Program.cs",
               "RelativeToolTip": "PRS_With_Entity_Framework\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwCgBAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T21:44:41.765Z",
               "EditorCaption": ""

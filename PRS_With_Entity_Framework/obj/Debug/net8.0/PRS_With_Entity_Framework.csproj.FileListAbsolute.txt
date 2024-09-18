@@ -128,3 +128,4 @@ C:\repos\maximum-bc-20240819\C-sharp-repos\PRS_With_Entity_Framework\PRS_With_En
 C:\repos\maximum-bc-20240819\C-sharp-repos\PRS_With_Entity_Framework\PRS_With_Entity_Framework\obj\Debug\net8.0\PRS_With_Entity_Framework.pdb
 C:\repos\maximum-bc-20240819\C-sharp-repos\PRS_With_Entity_Framework\PRS_With_Entity_Framework\obj\Debug\net8.0\PRS_With_Entity_Framework.genruntimeconfig.cache
 C:\repos\maximum-bc-20240819\C-sharp-repos\PRS_With_Entity_Framework\PRS_With_Entity_Framework\obj\Debug\net8.0\ref\PRS_With_Entity_Framework.dll
+C:\repos\maximum-bc-20240819\C-sharp-repos\PRS_With_Entity_Framework\PRS_With_Entity_Framework\obj\Debug\net8.0\PRS_With_Entity_Framework.sourcelink.json
